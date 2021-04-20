@@ -129,6 +129,21 @@ namespace AddressBook
                 } //end of edit() method
             }
         }
+        public void DeleteRecord(string firstName)  //Delte Record Method
+        {
+            for (int i = 0; i < list.Count; i++)   //Cheack record present or not
+            {
+                if (list[i].FirstName.Equals(firstName))  //Cheack list of record and user inpute same or not
+                {
+                    list.Remove(this.person); //Remove Record from Person class
+                    Console.WriteLine($"{firstName} Name of Record Delete Successfully"); //Print Record Delete
+                }
+                else
+                {
+                    Console.WriteLine($"{firstName} Name of Record Not Found "); //Print Record not found
+                }
+            }
+        }
 
     }
 }
