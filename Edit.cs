@@ -223,7 +223,6 @@ namespace Address_Book_System
         }
         public void SearchRecordCityOrState()  //SearchRecordCityOrState Record Method
         {
-         
             Console.WriteLine("1.City\n2.State\nEnter Choice:-");
 
             int choice2 = Convert.ToInt32(Console.ReadLine());
@@ -250,6 +249,7 @@ namespace Address_Book_System
 
                 }
 
+                Console.WriteLine($"\nNumber of contact in the City:- {city} are {count}");
             }
             else
             {
