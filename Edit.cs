@@ -144,22 +144,6 @@ namespace AddressBook
                 }
             }
         }
-        public bool CheckExist(string fname)  //Check exist method
-        {
-            int flag = 0;
-            foreach (Person person in list) //Check list of class person
-            {
-                if (person.FirstName.Equals(fname)) //check first name and user input are equal or not
-                {
-                    flag = 1;
-                    break;
-                }
-            }
-            if (flag == 1)
-            {
-                return true;
-            }
-            return false;
-        }
     }
 }
+           
